@@ -217,6 +217,9 @@ mkdir -p /var/lib/cloud/seed/nocloud-net
 ln -s /boot/user-data /var/lib/cloud/seed/nocloud-net/user-data
 ln -s /boot/meta-data /var/lib/cloud/seed/nocloud-net/meta-data
 
+# Test
+touch /etc/cloud/cloud-init.disabled
+
 # install docker-machine
 curl -sSL -o /usr/local/bin/docker-machine "https://github.com/docker/machine/releases/download/v${DOCKER_MACHINE_VERSION}/docker-machine-Linux-armhf"
 chmod +x /usr/local/bin/docker-machine
